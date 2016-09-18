@@ -33,7 +33,7 @@ except:
     import json
 
 
-class MozscapeError(StandardError):
+class MozscapeError(Exception):
     """A wrapper so that we can catch our own errors"""
 
     def __init__(self, value):
